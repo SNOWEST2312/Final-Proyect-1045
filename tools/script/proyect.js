@@ -1,4 +1,12 @@
+let currentPieces = null;
 let playersOutput = document.getElementById('players');
+
+function Pieces(rows, cols, color, isKing) {
+  this.rows = rows;
+  this.cols = cols;
+  this.color = color;
+  this.isKing = isKing;
+}
 
 function getNames() {
   let player1 = prompt('Player 1, escribe tu nombre:');
@@ -28,3 +36,25 @@ function getNames() {
 window.addEventListener('load', () => {
   setTimeout(getNames, 100);
 });
+
+// checkers board as a 2D array without loops
+
+// let board = [];
+// for (let i = 0; i < 8; i++) {
+//   board[i] = [];
+//   for (let j = 0; j < 8; j++) {
+//     board[i][j] = null;
+//   }
+// }
+
+// for (let i = 0; i < 8; i++) {
+//   for (let j = 0; j < 8; j++) {
+//     if ((i + j) % 2 === 1) {
+//       if (i < 3) {
+//         board[i][j] = new Pieces(i, j, 'red', false);
+//       } else if (i > 4) {
+//         board[i][j] = new Pieces(i, j, 'gray', false);
+//       }
+//     }
+//   }
+// }
