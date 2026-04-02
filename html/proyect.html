@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Checkers</title>
   <script src="../tools/script/proyect.js" defer></script>
   <link rel="stylesheet" href="../tools/css/proyect.css">
 </head>
@@ -15,9 +15,15 @@
   </header>
   <main>
     <p>Welcome to Checkers!</p>
-    <p>Players</p>
-    <p id="players"></p><br>
-    <canvas id="gameCanvas" width="800" height="800"></canvas>
+    <p>Current Players</p>
+    <div class="banner">
+      <p id="banner1"></p>
+      <span>VS</span>
+      <p id="banner2"></p>
+    </div>
+    <p id="players"></p>
+    <br>
+    <canvas id="chessboard" width="800" height="800"></canvas>
   </main>
 
 </body>
